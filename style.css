@@ -1,0 +1,982 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+#nav_section {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+}
+#nav_section .special_offer {
+  background-color: #0058c9;
+  padding: 7px;
+  text-align: center;
+  color: white;
+}
+#nav_section .special_offer a {
+  color: #ffffff;
+}
+
+#nav_section .special_offer p {
+  font-weight: bold;
+}
+#nav_section .nav_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+}
+#nav_section .nav_container .logo img {
+  width: 50px;
+  height: auto;
+}
+#nav_section .nav_container .shop_icons {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#nav_section .nav_container .login_container {
+  font-size: 23px;
+  display: flex;
+  gap: 17px;
+}
+
+#nav_section .shop_icons span {
+  font-size: 12px;
+  color: black;
+  display: flex;
+  font-weight: bold;
+}
+#nav_section .discount_button {
+  padding: 15px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+  z-index: 10;
+}
+#nav_section .icon_class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#nav_section .icon_class a {
+  padding-bottom: 9px;
+}
+
+/* ... (existing CSS) ... */
+
+#nav_section .icon_class .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 125px;
+  left: 160px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#nav_section #shopicon .dropdown-content a {
+  /* padding: 12px 16px; */
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+#nav_section .dropdown_container {
+  display: flex;
+  justify-content: center;
+  /* gap: 20px; */
+}
+#nav_section .image_container {
+  text-align: center;
+  font-size: 12px;
+  padding: 50px;
+}
+#nav_section .image_container .png_image {
+  text-align: center;
+  /* margin: 10px; */
+}
+.image_container .png_image img {
+  width: 100%;
+  height: auto;
+  max-width: 230px;
+  /* margin: 10px; */
+}
+#nav_section .dropdown_container .oreo_names {
+  display: flex;
+}
+.dropdown_container ul li {
+  font-size: 14px;
+  gap: 2px;
+  padding: 0 20px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.cookie_list_title {
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.image_container .png_image1 img {
+  width: 100%;
+  height: auto;
+  max-width: 75px;
+}
+
+.image_container .png_image3 img {
+  width: 100%;
+  height: auto;
+  max-width: 75px;
+}
+.valentine_image img {
+  padding: 50px 50px 0 0;
+}
+.gifticon_dropdown {
+  display: none;
+  position: absolute;
+  top: 125px;
+  left: 160px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.gifticon_dropdown a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+/* drop down gift icon ------------ */
+.gift_dropdown_container {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gift_dropdown_container .giftimage img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 30px;
+}
+.giftimage {
+  position: relative;
+}
+.gift_tag {
+  position: absolute;
+  bottom: 70px;
+  left: 10px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.gift_tag h4 {
+  font-size: 18px;
+  text-align: center;
+}
+.gift_tag a {
+  color: white;
+}
+.text_giftdiv {
+  margin-right: 50px;
+}
+
+.text_giftdiv h4 a {
+  /* margin-right: 20px; */
+  font-size: 13px;
+}
+.text_giftdiv p {
+  font-size: 13px;
+  padding-bottom: 20px;
+  color: grey;
+  font-weight: bold;
+}
+/* business icon dropdown ------------ */
+
+.businessicon_dropdown {
+  display: none;
+  position: absolute;
+  top: 125px;
+  left: 160px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.businessicon_dropdown a {
+  /* padding: 12px 16px; */
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.business_dropdown_container {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.business_dropdown_container .businessimage img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 30px;
+}
+.businessimage {
+  position: relative;
+}
+.business_tag {
+  position: absolute;
+  bottom: 70px;
+  left: 10px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.business_tag h4 {
+  font-size: 18px;
+  text-align: center;
+}
+.business_tag a {
+  color: white;
+}
+
+.text_businessdiv {
+  margin-right: 20px;
+}
+.text_businessdiv p {
+  font-size: 13px;
+  padding-bottom: 20px;
+  color: grey;
+  font-weight: bold;
+}
+/* ABOUT_ICON DROPDOWN ------- */
+
+.abouticon_dropdown {
+  display: none;
+  position: absolute;
+  top: 125px;
+  left: 160px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.abouticon_dropdown a {
+  /* padding: 12px 16px; */
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+/* * drop down about icon ------------ */
+.about_dropdown_container {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about_dropdown_container .aboutimage img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 30px;
+}
+.aboutimage {
+  position: relative;
+}
+.about_tag {
+  position: absolute;
+  bottom: 70px;
+  left: 10px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.about_tag h4 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.about_tag a {
+  color: white;
+}
+
+.text_aboutdiv {
+  margin-right: 20px;
+}
+.text_aboutdiv p {
+  font-size: 13px;
+  padding-bottom: 20px;
+  color: grey;
+  font-weight: bold;
+}
+/* ---------------- slider section ---------------- */
+#slider_section {
+  padding-top: 170px;
+}
+.slider {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider img {
+  width: 100%;
+  height: 490px;
+  display: none;
+}
+img.displaySlide {
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  padding: 10px 15px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* customize section ------------------- */
+#oreo_customize {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 130px;
+  padding-bottom: 50px;
+}
+
+#oreo_customize .customize_container {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#oreo_customize .customize_container .oreoid_image img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+}
+#oreo_customize .customize_container h2 {
+  font-size: 50px;
+}
+#oreo_customize .customize_container p {
+  color: grey;
+}
+#oreo_customize .customize_container .customize_button {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 140, 0),
+    rgb(247, 0, 119),
+    rgb(67, 76, 163)
+  );
+  display: inline-flex;
+  width: 180px;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  font-weight: 600;
+}
+#oreo_customize .customize_container .customize_button img {
+  width: 100%;
+  height: auto;
+  max-width: 30px;
+  padding: 2px;
+}
+#oreo_customize .customize_container .customize_button a {
+  color: #ffffff;
+}
+#oreo_customize .customize_example img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+#oreo_customize .customize_container p {
+  font-size: 20px;
+}
+#oreo_customize .customize_container h2 {
+  color: rgb(76, 73, 73);
+}
+/* --------- section oreo banner -------------------- */
+#oreo_banner .banner_container {
+  width: 100%;
+}
+#oreo_banner .banner_container img {
+  width: 100%;
+  height: auto;
+}
+#oreo_banner .banner_container {
+  text-align: center;
+}
+#oreo_banner .banner_container h3 {
+  font-size: 45px;
+  margin-top: 80px;
+  color: rgb(48, 46, 46);
+}
+
+/* oreo live dish section ---------------------------*/
+#live_dishes .dishes_heading {
+  padding: 50px 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#live_dishes .dishes_heading h5 {
+  font-size: 45px;
+  text-align: center;
+}
+#live_dishes .dishes_heading p {
+  font-size: 25px;
+  text-align: center;
+}
+/* cake slider section -------------------------------------------------------------------------------------------------- */
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  height: 347px;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 350px;
+  height: 250px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+/* ------ recipes button ---------*/
+.recipes_button_container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.recipes_button {
+  padding: 10px 25px;
+  margin: 10px 0;
+  border: none;
+  background: #0058c9;
+  display: inline-block;
+  border-radius: 5px;
+}
+.recipes_button a {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+/* -------------- space_banner ------------------------- */
+
+#space_banner {
+  z-index: 3;
+  position: absolute;
+}
+.space_banner_container {
+  width: 94%;
+  margin-left: 43px;
+  position: relative;
+}
+.space_banner_container img {
+  width: 100%;
+}
+.space_content_text {
+  position: absolute;
+  bottom: 110px;
+  left: 330px;
+  text-align: center;
+}
+.space_content_text h6 {
+  font-size: 45px;
+  color: white;
+}
+.space_content_text p {
+  color: white;
+  font-size: 17px;
+}
+/* --------- oreo biscuit image section ---------- */
+#oreo_biscuit_image {
+  background-color: #0058c9;
+  padding-top: 38px;
+  z-index: 0;
+  position: sticky;
+  top: 250px;
+  padding-bottom: 400px;
+}
+.biscuit_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.oreo_image_div {
+  width: 200px;
+}
+.oreo_image_div img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+.biscuit_container p {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+/* footer_section --------------------- */
+#footer_section {
+  background-color: #0058c9;
+  position: sticky;
+  top: 900px;
+  padding-bottom: 50px;
+}
+#footer_section .footer_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: top;
+}
+#footer_section .footer_container .footer_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer_section .footer_container .footer_logo .socialmedia_icons {
+  display: flex;
+  gap: 20px;
+}
+#footer_section .footer_container .footer_logo .logo_image_div img {
+  width: 100%;
+}
+#footer_section .footer_container .footer_logo .socialmedia_icons a {
+  color: #ffffff;
+  font-size: 24fpx;
+}
+#footer_section .footer_container .footer_nav ul {
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-left: 170px;
+  padding-top: 10px;
+}
+.footer_container .footer_nav ul a {
+  color: #fffbfb;
+  font-size: 17px;
+  font-weight: 600;
+}
+.email_subscribe {
+  width: 345px;
+}
+.email_subscribe .email_title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.email {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+}
+.email_submit {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: white;
+  color: #0847e7;
+  background-color: #ffffff;
+  font-weight: 700;
+}
+
+.emailid_text {
+  color: #ffffff;
+  font-size: 12px;
+  padding-top: 7px;
+}
+#footer_copyright {
+  position: relative;
+  padding-top: 50px;
+  background-color: #0058c9;
+  padding-bottom: 70px;
+}
+
+#footer_copyright .copyright_container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+#footer_copyright .copyright_container .terms_and_conditions ul {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  gap: 16px;
+  font-size: 12px;
+  color: #ffffff;
+}
+.copyright_container .copyright_text p {
+  font-size: 13px;
+  color: #ffffff;
+}
+/* ---------------------------------------cart css---------------------------------------------------------------------- */
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/**
+* ! Navbar STyles are here
+**/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0355bf;
+  color: white;
+  padding: 25px 60px;
+  margin-bottom: 30px;
+}
+.oreo_title_container {
+  background-color: #0355bf;
+  color: white;
+  padding: 25px 60px;
+  margin-bottom: 30px;
+}
+.cart {
+  position: relative;
+  background-color: #fff;
+  color: #212529;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.cartAmount {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-size: 13px;
+  background-color: red;
+  color: white;
+  padding: 0px 5px 0px 5px;
+  border-radius: 3px;
+}
+
+/**
+* ! Shop items styles are here
+**/
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 90px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+.item {
+  border: 2px solid #0080ff;
+  border-radius: 12px;
+  /* padding: 20px; */
+  width: 260px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash-lg {
+  color: red;
+}
+
+.bi-plus-lg {
+  color: green;
+}
+
+/* button ------*/
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: green;
+}
+.removeAll {
+  background-color: red;
+}
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 360px);
+  justify-content: center;
+  gap: 15px;
+}
+.cart-item {
+  border: 2px solid #0080ff;
+  border-radius: 5px;
+  display: flex;
+}
+.cart-item img {
+  border-radius: 30px;
+}
+.title-price-x {
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 6px 6px;
+  width: 54px;
+  margin-right: 20px;
+}
+.cart .fa-solid {
+  font-size: 25px;
+  top: 20px;
+  display: flex;
+}
+.addtocart {
+  padding: 10px 10px;
+  margin: 10px 0;
+  border: none;
+  background: #0058c9;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.addtocart:hover {
+  background: #6bbce5;
+}
+
+#product-id {
+  border: none;
+}
+.hiddentext {
+  color: white;
+}
