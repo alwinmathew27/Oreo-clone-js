@@ -456,7 +456,7 @@ img.displaySlide {
 
 /* oreo live dish section ---------------------------*/
 #live_dishes .dishes_heading {
-  padding: 50px 0 10px;
+  padding: 60px 0 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
