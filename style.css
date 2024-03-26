@@ -380,12 +380,10 @@ img.displaySlide {
 }
 /* customize section ------------------- */
 #oreo_customize {
-  padding-top: 100px;
+  padding: 60px 0 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
-  gap: 130px;
-  padding-bottom: 50px;
 }
 
 #oreo_customize .customize_container {
