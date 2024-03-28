@@ -693,14 +693,15 @@ img.displaySlide {
 }
 #footer_section .footer_container .footer_logo .socialmedia_icons {
   display: flex;
-  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
 }
 #footer_section .footer_container .footer_logo .logo_image_div img {
   width: 100%;
 }
 #footer_section .footer_container .footer_logo .socialmedia_icons a {
   color: #ffffff;
-  font-size: 24fpx;
+  font-size: 27px;
 }
 #footer_section .footer_container .footer_nav ul {
   gap: 14px;
