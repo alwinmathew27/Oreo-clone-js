@@ -337,7 +337,7 @@ a {
 #slider_section {
   padding-top: 170px;
 }
-.slider {
+#slider_section .slider {
   position: relative;
   width: 85%;
   margin: auto;
